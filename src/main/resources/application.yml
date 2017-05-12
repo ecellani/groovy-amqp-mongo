@@ -1,0 +1,28 @@
+server:
+  contextPath: /api
+  port: ${WEB_PORT:3080}
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:USER/PASS@HOST:PORT/DB
+
+  rabbitmq:
+    host: localhost
+    port: 5673
+    username: guest
+    password: guest
+
+  data:
+    mongodb:
+      uri: mongodb://HOST:PORT/DB
+
+    redis:
+      host: localhost
+      port: 6379
+
+sample:
+  threadPool: 12
+
+  inscricao:
+    fila: fila_teste
+    collection: testes
